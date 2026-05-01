@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Maker</title>
+    <style>body { font-family: Arial; padding: 50px; }</style>
+</head>
+<body>
+    <h2>Özgeçmiş Bilgilerini Gir</h2>
+    <form action="/generate_pdf" method="POST">
+        <input type="text" name="name" placeholder="Ad Soyad" required><br><br>
+        <input type="text" name="address" placeholder="Adres"><br><br>
+        <textarea name="experience" placeholder="İş Deneyimleri"></textarea><br><br>
+        <textarea name="skills" placeholder="Yetenekler"></textarea><br><br>
+        <button type="submit">PDF Olarak İndir</button>
+    </form>
+</body>
+</html>
